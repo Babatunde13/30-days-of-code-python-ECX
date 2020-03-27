@@ -7,7 +7,7 @@ def guessing_game(no_of_guess, target):
     Returns: the positive difference between the final guess and the correct value
     '''
 
-    for num in range(no_of_guess): # iterates no_of_guesses time
+    for _ in range(no_of_guess): # iterates no_of_guesses time
         yournum = int(input('Enter a number: ')) # gets user input
         if yournum > target: # checks if input is greater tahn actual value
             print('Your guess is higher than the correct number')
