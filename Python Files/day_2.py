@@ -8,8 +8,8 @@ def password_generator(password_lenght):
     Returns: The generated password and also prints if the password is weak or strong.
     '''
 
-    password = ''.join(random.choices(string.ascii_letters+str(1234567890), k=password_lenght))
-    if password_lenght < 8:
+    password = ''.join(random.choices(string.ascii_letters+str(1234567890), k=password_lenght)) # Generates a password of lenght password_lenght
+    if password_lenght < 8: # Checks if password_lenght is less than 8
         return 'Your pass word is weak'
     
-    return password
+    return password # If condition is False this happens
