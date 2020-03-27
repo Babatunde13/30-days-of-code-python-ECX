@@ -1,3 +1,5 @@
+## This file lists all the challenges from day 0 to day 29.
+
 # Day 0:
     Scrabble Score Generator
 
