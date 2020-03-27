@@ -7,6 +7,6 @@ def word_score(word):
 
     dict_ = {1: ['A', 'E','I', 'L', 'N', 'O', 'R', 'S', 'T' ,'U'], 
     2: ['D', 'G'], 3: ['B', 'C', 'M', 'P'], 4: ['F', 'H', 'V', 'W', 'Y'], 
-    5:['k'], 8: ['J', 'X'], 10: ['Q','Z']}
-    res = [k for k,v in dict_.items() for char in word if char.upper() in v]
-    return sum(res)
+    5:['k'], 8: ['J', 'X'], 10: ['Q','Z']} # Creates the dict object where all letters are mapped to their point.
+    res = [k for k,v in dict_.items() for char in word if char.upper() in v] # Loops through dict and word and appends the value for each point in the word.
+    return sum(res) # Returns the sum of the list
