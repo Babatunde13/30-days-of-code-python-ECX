@@ -1,5 +1,5 @@
 # Books
-    ### [Automate the boring stuff with Python](https://automatetheboringstuff.com/) <br/>
+    [Automate the boring stuff with Python](https://automatetheboringstuff.com/) <br/>
     ### [Practical Introduction to Python](https://www.brianheinold.net/python/A_Practical_Introduction_to_Python_Programming_Heinold.pdf)<br/>
     ### [Python Crash Course](https://nostarch.com/pythoncrashcourse2e)
 
@@ -15,4 +15,4 @@
 # Articles:
     ### [Python Algorithm](https://runestone.academy/runestone/books/published/pythonds/index.html)
 
-
+[sjskj](https://runestone.academy/runestone/books/published/pythonds/index.html)
