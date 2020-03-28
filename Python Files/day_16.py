@@ -3,8 +3,9 @@
 
 def binary_adder(bin_1, bin_2):
     '''
-    The function named binary_adder which takes in two parameters bin_1 and bin_2
-      The parameters are both in binary
+    The function named binary_adder
+
+    Parameters: bin_1 and bin_2. The parameters are both in binary
 
      Returns the sum of the two parameters in binary
     '''
