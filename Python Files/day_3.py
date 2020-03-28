@@ -1,8 +1,10 @@
 def bin_search(list_, num):
     '''
-    A function named bin_search which takes in two parameters list_ and num. The functions
+    A function named bin_search. The functions
      searches list_ and checks if num is in ut using the concept of binary search, you can   
       use this link to read more on binary https://en.wikipedia.org/wiki/Binary_search_algorithm
+
+    Parameters:  list_ and num
 
     Returns True if num is in list_ else False.
     '''
