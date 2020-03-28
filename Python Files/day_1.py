@@ -1,8 +1,10 @@
 def guessing_game(no_of_guess, target):
     '''
-    A function named guessing_game that takes in two parameters no_of_guesses and target,
+    A function named guessing_game,
      it asks for the user guess and prints your guess is higher or lower. This is repeated by
      the no_of_guess.day2.py
+
+     Parameters: no_of_guesses and target
 
     Returns: the positive difference between the final guess and the correct value
     '''
