@@ -2,8 +2,10 @@ import random, string
 
 def password_generator(password_lenght):
     '''
-    A function named password_generator that takes in the parameter password_lenght.
+    A function named password_generator that takes in the .
      The function generates a password of lenght password_lenght
+
+    Parameter:  password_lenght
 
     Returns: The generated password and also prints if the password is weak or strong.
     '''
