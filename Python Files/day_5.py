@@ -1,0 +1,3 @@
+def faithful(number):
+    
+    pass
