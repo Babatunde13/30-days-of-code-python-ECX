@@ -6,6 +6,8 @@ def GPA_calculator(scores, units):
             units: The units of each course
         
     Returns: The GPA of the student.
+    @author: Babatunde Koiki
+    Created on 2020-03-24 
     '''
     
     grades = []
