@@ -7,6 +7,8 @@ def guessing_game(no_of_guess, target):
      Parameters: no_of_guesses and target
 
     Returns: the positive difference between the final guess and the correct value
+    @author: Babatunde Koiki
+    Created on 2020-03-24 
     '''
 
     for _ in range(no_of_guess): # iterates no_of_guesses time

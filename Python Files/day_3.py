@@ -7,6 +7,8 @@ def bin_search(list_, num):
     Parameters:  list_ and num
 
     Returns True if num is in list_ else False.
+    @author: Babatunde Koiki
+    Created on 2020-03-24 
     '''
 
     list_.sort() # Ensures that the list is sorted
