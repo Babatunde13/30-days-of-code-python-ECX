@@ -5,6 +5,8 @@ def fibonacci(n):
     Parameter: n
 
     Return: The nth term of the fibonacci sequence
+    @author: Babatunde Koiki
+    Created on 2020-03-24 
     '''
 
     if n == 0: # Checks if it is the first element
