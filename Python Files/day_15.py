@@ -8,6 +8,9 @@ def file_reverser(file):
      be created after running the program
 
      Returns: The function doesn't return anything.
+
+    @author: Babatunde Koiki
+    Created on 2020-03-28
     '''
     with open(file) as f: # Opens the file in read mode
         file_ = f.readlines() # Saves all text in a variable file_ where each line is a list and closes the file when done.
