@@ -12,17 +12,18 @@ def Hangman(secret_word, N):
     @author: Babatunde Koiki
     Created on 2020-03-29 
     '''
+    res = '
     for _ in range(N):
-        user_guess = input(input('Guess all the letters in the secret word: '))
-        if set(secret_word.lower()) == set(user_guess.lower()):
-            print(set(secret_word), set(user_guess))
-            res = 'won'
+        user_guess = input(input('Guess a the letter in the secret word: '))
+        if user_guess.lower() in secret_word.lower():
+            print('corrct guess')
+            res += user_guess
         else:
-            print(set(secret_word), set(user_guess))
-            res = 'lost'
+            print('Invalid guess')
+            
+    if user_guess.lower() == res.lower():
+        return 'Won'
+    return 'Lost'
 
-    return res
-
-print(set('babatunde') == set('butaend'))
 
 print(Hangman('Babatunde', 5))
