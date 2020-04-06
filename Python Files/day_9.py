@@ -21,7 +21,7 @@ def PowerSet(set_):
             if((counter and (1 < j)) > 0): 
                 powerset.append(set(j)) 
     
-    returns powerset
+    return powerset
   
  
 set_ = ['a', 'b', 'c']; 
