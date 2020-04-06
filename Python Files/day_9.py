@@ -10,7 +10,7 @@ def PowerSet(set_):
     pow_set_size = int(math.pow(2, len(set_))
     counter = 0
     j = 0
-    powerset = []
+    powerset = [[]]
      
     for counter in range(0, pow_set_size): 
         for j in range(0, set_size): 
