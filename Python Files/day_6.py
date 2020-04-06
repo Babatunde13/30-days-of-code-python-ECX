@@ -19,7 +19,7 @@ def PowerSet(set_):
             # counter is set If set then  
             # print jth element from set  
             if((counter and (1 < j)) > 0): 
-                powerset.append(set(j)) 
+                powerset.append(j) 
     
     return powerset
   
