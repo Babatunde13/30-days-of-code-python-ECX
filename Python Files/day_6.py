@@ -25,4 +25,4 @@ def PowerSet(set_):
   
  
 set_ = ['a', 'b', 'c']; 
-PowerSet(set_);  
+PowerSet(set_)
