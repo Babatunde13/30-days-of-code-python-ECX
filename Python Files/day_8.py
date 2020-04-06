@@ -21,7 +21,7 @@ def Hangman(secret_word, N):
         else:
             print('Invalid guess')
             
-    if user_guess.lower() == res.lower():
+    if set(user_guess.lower()) == set(res.lower()):
         return 'Won'
     return 'Lost'
 
