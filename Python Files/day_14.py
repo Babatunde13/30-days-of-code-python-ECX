@@ -1,5 +1,5 @@
-def anagram_finder(list_words):
-	'''This function recieves a liat of words and returns a list of sublists of all anagrams'''
+def anagram_finder(list_words: list) -> list:
+	'''This function recieves a list of words and returns a list of sublists of all anagrams'''
 	ans_list = []
 	dict = {}
 	for i in list_words:
