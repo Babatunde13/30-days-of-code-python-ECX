@@ -1,16 +1,9 @@
 """
-Given a paragraph text as a string and its decryption key, create a function named decryptor that returns the decrypted text.
-The decryption key will be in the form of a positive or negative integer.
-The number indicates how many alphabets away each character is from its actual value and the sign indicates the direction (forward for positive and backward for negatives).
+A function that encrypts a text using the number given. It shifts each letter by the number
 e.g. given the text ‘Gvvrk’ and decryption key =-6, the result should be ‘Apple’.
 Note that if in counting backward, one has to go before A, we continue from Z.
 The same goes for counting beyond Z, we continue from A.
 Also, all cases should be retained and all non-alphabets should not be modified.
-Test Cases: print(decryptor('Nby vis cm aiix.',6)) returns 'The boy is good.
-'print(decryptor('Rovvy pbyw dro ydrob csno…',-10)) returns 'Hello from the other side...'
-print(decryptor('Ukq'ra kjhu fqop xacqj.',4)) returns "You've only just begun."
-print(decryptor('Sdwp zkaoj'p gehh ukq, iwgao ukq opnwjcan.',-22)) returns "What doesn't kill you makes you stranger."
-print(decryptor('Rcb mjh 9 xo cqn 30 mjhb xo lxmn lqjuunwpn!!',17)) returns "Its day 9 of the 30 days of code challenge!!
 
 """
 
