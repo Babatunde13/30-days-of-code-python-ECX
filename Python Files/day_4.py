@@ -6,7 +6,7 @@ def is_Nigerian(phone_number):
 
     Returns: True if number is a Nigerian number False otherwise.
     @author: Babatunde Koiki
-    Created on 2020-03-24 
+    Created on 2020-03-24 .
     '''
 
     if phone_number[1:].isnumeric(): # Checks if all characters except the first which can be `+` are number.
