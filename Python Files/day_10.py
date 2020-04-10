@@ -1,0 +1,2 @@
+def seive(num):
+  pass
