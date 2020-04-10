@@ -4,7 +4,7 @@ def faithful(number):
 
     Parameter: number, twhich is used in computing numberth term of the faithful sequence
 
-    Return: Returns the nth term of the faaithful sequence
+    Return: Returns the nth term of the faaithful sequence.
 
     @author: Babatunde Koiki
     Created on 2020-03-29 
