@@ -1,2 +1,2 @@
-def power_list(list_):
+def captains_roomt(list_):
     pass
