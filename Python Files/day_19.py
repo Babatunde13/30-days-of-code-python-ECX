@@ -1,35 +1,32 @@
-# A Naive recursive Python program to fin minimum number 
-# operations to convert str1 to str2 
-def editDistance(str1, str2, m, n): 
+def find_edit_dist(str1: str, str2: str) -> int:
+  '''
+  A function that returns the edit distance between two words
+  
+  Parameters: ---------------
+    str1: string
+    		The first word
+    str2: string
+    		The second string
+	
+  Returns : -------------------
+     edit_distance: integer. 
+     		The distance between str1 and str2
 
-	# If first string is empty, the only option is to 
-	# insert all characters of second string into first 
-	if m == 0: 
-		return n 
+  @author: Babatunde Koiki
+  Created on: 18-04-2020
+  '''
+  if str1 == "":
+      return len(str2)
+  if str2 == "":
+      return len(str1)
+  if str1[-1] == str2[-1]:
+      dist = 0
+  else:
+      dist = 1
+  edit_distance = min([find_edit_dist(str1[:-1], str2)+1,
+             find_edit_dist(str1, str2[:-1])+1, 
+             find_edit_dist(str1[:-1], str2[:-1]) + dist])
 
-	# If second string is empty, the only option is to 
-	# remove all characters of first string 
-	if n == 0: 
-		return m 
+  return edit_distance
 
-	# If last characters of two strings are same, nothing 
-	# much to do. Ignore last characters and get count for 
-	# remaining strings. 
-	if str1[m-1]== str2[n-1]: 
-		return editDistance(str1, str2, m-1, n-1) 
-
-	# If last characters are not same, consider all three 
-	# operations on last character of first string, recursively 
-	# compute minimum cost for all three operations and take 
-	# minimum of three values. 
-	return 1 + min(editDistance(str1, str2, m, n-1), # Insert 
-				editDistance(str1, str2, m-1, n), # Remove 
-				editDistance(str1, str2, m-1, n-1) # Replace 
-				) 
-
-# Driver program to test the above function 
-str1 = "sunday"
-str2 = "saturday"
-print editDistance(str1, str2, len(str1), len(str2)) 
-
-# This code is contributed by Bhavya Jain 
+print(find_edit_dist('goat', 'float'))
