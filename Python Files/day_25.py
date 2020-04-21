@@ -18,4 +18,7 @@ def desc_triangle(a, b, c):
         return "Iscocelles Triangle", area
 
     else: # If first two are False, then triangle is a scalene triangle.
+        k = sorted([a, b, c])
+        if k[0] ** 2 + k[1] ** 2 == k[2] ** 2:
+            return "Right andled Scalene triangel", area
         return "Scalene Triangle", area
