@@ -12,11 +12,11 @@ def Hangman(secret_word, N):
     @author: Babatunde Koiki
     Created on 2020-03-29 
     '''
-    res = '
+    res = ''
     for _ in range(N):
-        user_guess = input(input('Guess a the letter in the secret word: '))
+        user_guess = (input('Guess a the letter in the secret word: ')
         if user_guess.lower() in secret_word.lower():
-            print('corrct guess')
+            print(user_guess)
             res += user_guess
         else:
             print('Invalid guess')
