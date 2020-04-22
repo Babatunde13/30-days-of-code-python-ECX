@@ -1,8 +1,8 @@
 def Validator(email):
 
-    '''This function receives a email address as string and returns the validity'''
+    '''This function receives a email address as string and returns the validity
+    '''
     count_a = 0
-    len_email = len(email)
     dot = email.rfind('.')
     at = email.rfind('@')
 
