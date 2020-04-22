@@ -1,6 +1,7 @@
-def closest_power(base, target):
+def closest_power(base: int, target: int) -> int:
     """
     This function returns the closest power to raise the base whose result does not exceed target.
+    Parameter
     """
     
     a = []
