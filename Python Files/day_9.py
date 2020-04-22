@@ -7,61 +7,57 @@ Also, all cases should be retained and all non-alphabets should not be modified.
 
 """
 
-#defining a variable for all alphabets in lowercase and uppercase
-lowcase = 'abcdefghijklmnopqrstuvwxyz'
-uppcase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 
-def decryptor(paragraph, key):
-    
-    #intializing an empty sting for the decrypted paragraph
-    
+def decryptor(paragraph: str, key: int) -> int:
+    '''
+    A function that shifts each cahracter in a text by a particular number:
+    Parameter: ------
+        paragraph: str, text to be shifted
+        key: int, number by whuch text is shifted.
+
+    Return: 
+        a new text that has been decrypted.
+    '''
+    #defining a variable for all alphabets in lowercase and uppercase
+    lowcase = 'abcdefghijklmnopqrstuvwxyz'
+    uppcase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    #intializing an empty string for the decrypted paragraph
     decrypted = ''
-    
     paragraph=paragraph.replace("'",'\'')
     
     try:
         # when key is a negative number
         if key < 0:
-                #Looping through the alphabets in the paragraph
             for letter in paragraph:
-                
-                #checking if the alphabet is lowercase
                 if letter in lowcase:
-                    
-                    #getting the index of the alphabet and subtracting the key to make it count backward
                     decrypting = lowcase.index(letter) + key
-                    #getting the value of the calculated index
                     decrypt = lowcase[decrypting]
-                    #adding it to the originally created decrypted string
                     decrypted += decrypt
-                    
-                #if letter is uppercase
+
                 elif letter in uppcase:
                     decrypting = uppcase.index(letter) + key
                     decrypt = uppcase[decrypting]
                     decrypted += decrypt
+
                 else:
                     decrypted += letter
-                    
-        #when key is a positive number
-        elif key > 0:
 
+        elif key > 0:
             for letter in paragraph:
                 if letter in lowcase:
                     decrypting = lowcase.index(letter) + key
                     if decrypting>len(lowcase):
-                        #handling scenerius where caluculated index is greater than 26
                         decrypt = lowcase[decrypting-26]
                         decrypted += decrypt
-                        #handling cases where calculated index is 0
                     elif decrypting==len(lowcase):
                         decrypt = lowcase[0]
                         decrypted += decrypt
                     else:
                         decrypt = lowcase[decrypting]
                         decrypted += decrypt
-                #doing the same for uppoercase letters
+        
                 elif letter in uppcase:
                     decrypting = uppcase.index(letter) + key
                     if decrypting>len(lowcase):
@@ -75,11 +71,12 @@ def decryptor(paragraph, key):
                         decrypted += decrypt
                 else:
                     decrypted += letter
-    #handling exception
+
     except Exception as e:
-        print('Error Message: ', e)
-    print(decrypted)
+        return 'Error Message: ', e
+    else:
+        return decrypted
 
 #invoking the function
-print(decryptor('Rcb mjh 9 xo cqn 30 mjhb xo lxmn lqjuunwpn!!','x'))
+print(decryptor('Rcb mjh 9 xo cqn 30 mjhb xo lxmn lqjuunwpn!!','b'))
 
