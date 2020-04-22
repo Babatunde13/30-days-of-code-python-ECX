@@ -8,8 +8,8 @@ def PowerSet(set_):
     # set_size of power set of a set 
     # with set_size n is (2**n -1) 
     pow_set_size = int(math.pow(2, len(set_))
-    counter = 0
-    j = 0
+    # counter = 0
+    # j = 0
     powerset = [[]]
      
     for counter in range(0, pow_set_size): 
@@ -25,4 +25,4 @@ def PowerSet(set_):
   
  
 set_ = ['a', 'b', 'c']; 
-PowerSet(set_)
+print(PowerSet(set_))
